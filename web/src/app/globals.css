@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: hsl(210, 30%, 96%);
+  --color-foreground: hsl(210, 15%, 15%);
+  --color-card: hsl(0, 0%, 100%);
+  --color-muted: hsl(210, 20%, 90%);
+  --color-border: hsl(210, 20%, 80%);
+  --color-primary: hsl(210, 85%, 45%);
+  --color-accent: hsl(150, 70%, 45%);
+  --color-success: hsl(120, 70%, 40%);
+  --color-warning: hsl(30, 85%, 45%);
+  --radius: 0.5rem;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+html {
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top left, hsl(210, 40%, 98%), var(--color-background));
+}
+
+/* Utility classes for subtle motion */
+.transition-fade {
+  @apply transition-opacity duration-300 ease-in-out;
+}
